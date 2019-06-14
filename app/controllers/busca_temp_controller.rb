@@ -2,12 +2,9 @@ class BuscaTempController < ApplicationController
     require 'net/http'
     require 'json'
 
-    def buscar 
-        render json: ComunicacaoWeather.new.buscar(cidade_params[:cidade])
-    end
+    private
 
-    private 
-    def cidade_params
+    def temp_params
         params.permit(:cidade)
     end
 end
