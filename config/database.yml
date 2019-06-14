@@ -23,6 +23,7 @@ default: &default
   user: postgres
   password: postgres
   host: localhost
+  timeout: 3000
 
 development:
   <<: *default
