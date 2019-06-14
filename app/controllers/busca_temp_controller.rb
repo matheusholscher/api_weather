@@ -6,6 +6,10 @@ class BuscaTempController < ApplicationController
         render json: AtualWeather.new.atual(tempe_params[:cidade]), status: :ok
     end
 
+    def cinco
+        render json: CincoForecast.new.cincoDias(temp_params[:cidade]), status: :ok
+    end
+
     private
 
     def temp_params
