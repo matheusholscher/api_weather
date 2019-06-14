@@ -10,6 +10,10 @@ class BuscaTempController < ApplicationController
         render json: CincoForecast.new.cincoDias(temp_params[:cidade]), status: :ok
     end
 
+    def horas
+        render json: HorasForecast.new.horas(temp_params[:cidade]), status: :ok
+    end
+
     private
 
     def temp_params
