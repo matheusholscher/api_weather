@@ -1,9 +1,9 @@
-class BuscaAtual
+class BuscaTemperatura
     require 'net/http'
     require 'json' 
     require 'time'
 
-    def busca_atual(cidade)
+    def buscar_atual(cidade)
 
         @cidade = cidade
 

@@ -3,11 +3,11 @@ class BuscaHoras
     require 'json' 
     require 'time'
 
-    def busca_horas(cidade)
+    def buscar_horas(cidade)
         @cidade = cidade
 
         url = "http://api.openweathermap.org/data/2.5/forecast?q=#{@cidade},BR&APPID=7fe5a0bcd8c43fe22e389436e4f73f1f"
-    route
+    
         retorno = JSON.parse(Net::HTTP.get(URI(url)))
 
         resultado = []

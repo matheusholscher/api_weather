@@ -3,7 +3,7 @@ class BuscaDias
     require 'json' 
     require 'time'
 
-    def busca_cincoDias(cidade)
+    def buscar_CincoDias(cidade)
 
         @cidade = cidade
 

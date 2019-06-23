@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+    # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  
+  get 'clima/buscar_atual' 
+  get 'clima/buscar_horas'
+  get 'clima/buscar_CincoDias'
+  
 
-get 'buscatemp/busca_atual' 
-get 'buscatemp/busca_cicoDias'
-get 'buscatemp/busca_horas'
-
-#root 'welcome#index'
 end
